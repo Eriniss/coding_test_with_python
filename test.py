@@ -1,11 +1,9 @@
-a = {1, 3, 5, 6}
-b = {3, 6, 7, 8}
+# 배열 안에 데이터 삭제
 
-# 교집합
-print(a | b)  # {1, 3, 5, 6, 7, 8}
+arr = [1, 4, 6, 8, 8, 9]
+remove_set = [4, 8]
+result = []
 
-# 합집합
-print(a & b)  # {3, 6}
+result = [i for i in arr if i not in remove_set]
 
-# 차집합
-print(a - b)  # {1, 5}
+print(result)
